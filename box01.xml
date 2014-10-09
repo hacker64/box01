@@ -2,57 +2,49 @@
   <block type="variables_set" id="1" inline="true" x="-22" y="-56">
     <field name="VAR">i</field>
     <value name="VALUE">
-      <block type="procedures_callreturn" id="2" inline="false">
-        <mutation name="square">
-          <arg name="x"></arg>
-        </mutation>
-        <value name="ARG0">
-          <block type="math_number" id="3">
-            <field name="NUM">2</field>
-          </block>
-        </value>
+      <block type="math_number" id="36">
+        <field name="NUM">0</field>
       </block>
     </value>
-  </block>
-  <block type="procedures_defreturn" id="4" inline="false" x="-12" y="42">
-    <mutation>
-      <arg name="x"></arg>
-    </mutation>
-    <field name="NAME">square</field>
-    <statement name="STACK">
-      <block type="variables_set" id="5" inline="true">
-        <field name="VAR">local_i</field>
-        <value name="VALUE">
-          <block type="math_arithmetic" id="6" inline="true">
-            <field name="OP">MULTIPLY</field>
+    <next>
+      <block type="controls_whileUntil" id="17" inline="false">
+        <field name="MODE">WHILE</field>
+        <value name="NUMBER">
+          <block type="logic_compare" id="29" inline="true">
+            <field name="OP">GT</field>
             <value name="A">
-              <block type="variables_get" id="7">
-                <field name="VAR">x</field>
+              <block type="math_number" id="37">
+                <field name="NUM">4</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_arithmetic" id="8" inline="true">
-                <field name="OP">MULTIPLY</field>
+              <block type="variables_get" id="42">
+                <field name="VAR">i</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="variables_set" id="43" inline="true">
+            <field name="VAR">i</field>
+            <value name="VALUE">
+              <block type="math_arithmetic" id="57" inline="true">
+                <field name="OP">ADD</field>
                 <value name="A">
-                  <block type="variables_get" id="9">
-                    <field name="VAR">x</field>
+                  <block type="variables_get" id="62">
+                    <field name="VAR">i</field>
                   </block>
                 </value>
                 <value name="B">
-                  <block type="variables_get" id="10">
-                    <field name="VAR">x</field>
+                  <block type="math_number" id="44">
+                    <field name="NUM">1</field>
                   </block>
                 </value>
               </block>
             </value>
           </block>
-        </value>
+        </statement>
       </block>
-    </statement>
-    <value name="RETURN">
-      <block type="variables_get" id="11">
-        <field name="VAR">local_i</field>
-      </block>
-    </value>
+    </next>
   </block>
 </xml>
