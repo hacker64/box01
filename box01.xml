@@ -31,10 +31,10 @@
               </block>
             </value>
             <value name="B">
-              <block type="math_arithmetic" id="11" inline="true">
+              <block type="math_arithmetic" id="8" inline="true">
                 <field name="OP">MULTIPLY</field>
                 <value name="A">
-                  <block type="variables_get" id="12">
+                  <block type="variables_get" id="9">
                     <field name="VAR">x</field>
                   </block>
                 </value>
@@ -50,7 +50,7 @@
       </block>
     </statement>
     <value name="RETURN">
-      <block type="variables_get" id="9">
+      <block type="variables_get" id="11">
         <field name="VAR">local_i</field>
       </block>
     </value>
