@@ -3,7 +3,7 @@ box01
 
 Draw a square using the Jade Robot.  Move Forwards for one second, then Turn Right for one second, repeat these two actions four times before stopping.
 
-I changed this even more and more!
+I changed this even more and more and more!
 
 ### Project Information
 ```
